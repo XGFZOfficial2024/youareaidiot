@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>You Are an Idiot!</title>
+  <style>
+    body {
+      background-color: black;
+      color: white;
+      text-align: center;
+      font-family: Comic Sans MS, cursive, sans-serif;
+      animation: flash 0.5s infinite;
+    }
+
+    h1 {
+      font-size: 60px;
+      margin-top: 20%;
+    }
+
+    @keyframes flash {
+      0% { background-color: black; color: white; }
+      50% { background-color: white; color: black; }
+      100% { background-color: black; color: white; }
+    }
+  </style>
+</head>
+<body>
+  <h1>YOU ARE AN IDIOT 😜</h1>
+  <audio autoplay loop>
+    <source src="https://www.myinstants.com/media/sounds/you-are-an-idiot.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <script>
+    // Optional annoying popups — comment these out if you want it less intense
+    let i = 0;
+    const interval = setInterval(() => {
+      window.open('', '', 'width=300,height=200');
+      i++;
+      if (i > 5) clearInterval(interval);
+    }, 1500);
+  </script>
+</body>
+</html>
